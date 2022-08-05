@@ -1,29 +1,26 @@
 package orders;
 
-import orders.CustomerBag;
-import roles.Customer;
+import roles.Client;
 
 public class Order extends CustomerBag {
     private int id;
     private String dateOfCreation;
-    private Customer name;
-    private Customer address;
-    private Customer emailaddress;
-    private Customer phonenumber;
-    private String paymentMethod;
-    private double summaryOfOrder;
+    private Client name;
+    private Client address;
+    private Client emailAddress;
+    private Client phoneNumber;
+      private double summaryOfOrder;
 
     Order(){}
 
-    Order(int id, String dateOfCreation, Customer name, Customer address, Customer emailaddress,
-          Customer phonenumber, String paymentMethod, double summaryOfOrder){
+    Order(int id, String dateOfCreation, Client name, Client address, Client emailaddress,
+          Client phonenumber, double summaryOfOrder){
         this.id = id;
         this.dateOfCreation = dateOfCreation;
         this.name = name;
         this.address = address;
-        this.emailaddress = emailaddress;
-        this.phonenumber = phonenumber;
-        this.paymentMethod = paymentMethod;
+        this.emailAddress = emailaddress;
+        this.phoneNumber = phonenumber;
         this.summaryOfOrder = summaryOfOrder;
     }
 
@@ -43,44 +40,36 @@ public class Order extends CustomerBag {
         this.dateOfCreation = dateOfCreation;
     }
 
-    public Customer getName() {
+    public Client getName() {
         return name;
     }
 
-    public void setName(Customer name) {
+    public void setName(Client name) {
         this.name = name;
     }
 
-    public Customer getAddress() {
+    public Client getAddress() {
         return address;
     }
 
-    public void setAddress(Customer address) {
+    public void setAddress(Client address) {
         this.address = address;
     }
 
-    public Customer getEmailaddress() {
-        return emailaddress;
+    public Client getEmailaddress() {
+        return emailAddress;
     }
 
-    public void setEmailaddress(Customer emailaddress) {
-        this.emailaddress = emailaddress;
+    public void setEmailaddress(Client emailaddress) {
+        this.emailAddress = emailaddress;
     }
 
-    public Customer getPhonenumber() {
-        return phonenumber;
+    public Client getPhonenumber() {
+        return phoneNumber;
     }
 
-    public void setPhonenumber(Customer phonenumber) {
-        this.phonenumber = phonenumber;
-    }
-
-    public String getPaymentMethod() {
-        return paymentMethod;
-    }
-
-    public void setPaymentMethod(String paymentMethod) {
-        this.paymentMethod = paymentMethod;
+    public void setPhonenumber(Client phonenumber) {
+        this.phoneNumber = phonenumber;
     }
 
     public double getSummaryOfOrder() {

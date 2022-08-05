@@ -5,6 +5,7 @@ import roles.Roles;
 public class Admin extends Roles {
     private String login;
     private String password;
+
 Admin (){}
     Admin(String login, String password){
     this.login = login;

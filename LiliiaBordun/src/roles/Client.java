@@ -1,15 +1,13 @@
 package roles;
 
-import roles.Roles;
-
-public class Customer extends Roles {
+public class Client extends Roles {
     private String city;
     private String address;
     private String password;
 
-    Customer(){}
+    Client(){}
 
-    Customer(String city, String address, String password){
+    Client(String city, String address, String password){
         this.city = city;
         this.address = address;
         this.password = password;
